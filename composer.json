@@ -12,7 +12,7 @@
         }
     ],
     "autoload": {
-        "psr-0": { "": "src/" }
+        "psr-4": { "FOX\\ReferenceDataLoaderBundle\\": "" }
     },
     "require": {
         "php": ">5.3.3",
