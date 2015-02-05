@@ -1,8 +1,8 @@
 <?php
 
-namespace GlobalPlatform\Bundle\DomainBundle\Configuration;
+namespace FOX\ReferenceDataLoaderBundle\Configuration;
 
-use GlobalPlatform\Bundle\DomainBundle\Exception\ConfigurationNotFoundException;
+use FOX\ReferenceDataLoaderBundle\Exception\ConfigurationNotFoundException;
 
 /**
  * Class ConfigurationChain

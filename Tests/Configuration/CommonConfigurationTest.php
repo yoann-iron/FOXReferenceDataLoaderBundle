@@ -1,8 +1,8 @@
 <?php
 
-namespace GlobalPlatform\Bundle\DomainBundle\Tests\Unit\Configuration;
+namespace FOX\ReferenceDataLoaderBundle\Tests\Unit\Configuration;
 
-use GlobalPlatform\Bundle\DomainBundle\Configuration\CommonConfiguration;
+use FOX\ReferenceDataLoaderBundle\Configuration\CommonConfiguration;
 
 /**
  * Class CommonConfigurationTest

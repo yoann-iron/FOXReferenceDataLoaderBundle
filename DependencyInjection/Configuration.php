@@ -1,6 +1,6 @@
 <?php
 
-namespace GlobalPlatform\Bundle\DomainBundle\DependencyInjection;
+namespace FOX\ReferenceDataLoaderBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;

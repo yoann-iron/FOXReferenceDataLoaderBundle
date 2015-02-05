@@ -1,10 +1,10 @@
 <?php
 
-namespace GlobalPlatform\Bundle\DomainBundle\Tests\Unit\Factory;
+namespace FOX\ReferenceDataLoaderBundle\Tests\Unit\Factory;
 
 use Doctrine\ORM\EntityManager;
-use GlobalPlatform\Bundle\DomainBundle\Builder\OrderProductBuilder;
-use GlobalPlatform\Bundle\DomainBundle\Entity\Subscription;
+use FOX\ReferenceDataLoaderBundle\Builder\OrderProductBuilder;
+use FOX\ReferenceDataLoaderBundle\Entity\Subscription;
 use Phake;
 
 /**
@@ -22,8 +22,8 @@ class OrderProductBuilderTest extends \PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
-        $this->websitePrimarySubscriptionProduct = Phake::mock('GlobalPlatform\Bundle\DomainBundle\Entity\WebsiteSubscriptionProduct');
-        $this->primarySubscriptionProduct        = Phake::mock('GlobalPlatform\Bundle\DomainBundle\Entity\SubscriptionProduct');
+        $this->websitePrimarySubscriptionProduct = Phake::mock('FOX\ReferenceDataLoaderBundle\Entity\WebsiteSubscriptionProduct');
+        $this->primarySubscriptionProduct        = Phake::mock('FOX\ReferenceDataLoaderBundle\Entity\SubscriptionProduct');
         $this->entityManager                     = Phake::mock(EntityManager::class);
         $this->subscription                      = Phake::mock(Subscription::class);
 
@@ -43,7 +43,7 @@ class OrderProductBuilderTest extends \PHPUnit_Framework_TestCase
     {
         $generatedOrderProduct = $this->orderProductBuilder->createFromWebsiteProduct($this->websitePrimarySubscriptionProduct);
 
-        $this->assertInstanceOf('GlobalPlatform\Bundle\DomainBundle\Entity\OrderProduct', $generatedOrderProduct);
+        $this->assertInstanceOf('FOX\ReferenceDataLoaderBundle\Entity\OrderProduct', $generatedOrderProduct);
         $this->assertEquals($this->websitePrimarySubscriptionProduct, $generatedOrderProduct->getWebsiteProduct());
         $this->assertEquals($this->websitePrimarySubscriptionProduct->getAtiAmount(), $generatedOrderProduct->getAtiAmount());
         $this->assertEquals($this->websitePrimarySubscriptionProduct->getTaxFreeAmount(), $generatedOrderProduct->getTaxFreeAmount());
@@ -58,7 +58,7 @@ class OrderProductBuilderTest extends \PHPUnit_Framework_TestCase
     {
         $generatedOrderProduct = $this->orderProductBuilder->createFromWebsiteProduct($this->websitePrimarySubscriptionProduct, $this->subscription);
 
-        $this->assertInstanceOf('GlobalPlatform\Bundle\DomainBundle\Entity\OrderProduct', $generatedOrderProduct);
+        $this->assertInstanceOf('FOX\ReferenceDataLoaderBundle\Entity\OrderProduct', $generatedOrderProduct);
         $this->assertEquals($this->websitePrimarySubscriptionProduct, $generatedOrderProduct->getWebsiteProduct());
         $this->assertEquals($this->websitePrimarySubscriptionProduct->getAtiAmount(), $generatedOrderProduct->getAtiAmount());
         $this->assertEquals($this->websitePrimarySubscriptionProduct->getTaxFreeAmount(), $generatedOrderProduct->getTaxFreeAmount());

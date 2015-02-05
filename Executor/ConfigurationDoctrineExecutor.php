@@ -1,6 +1,6 @@
 <?php
 
-namespace GlobalPlatform\Bundle\DomainBundle\Executor;
+namespace FOX\ReferenceDataLoaderBundle\Executor;
 
 use Doctrine\ORM\EntityManager;
 use Doctrine\DBAL\Connection;

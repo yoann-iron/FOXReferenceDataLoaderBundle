@@ -1,6 +1,6 @@
 <?php
 
-namespace GlobalPlatform\Bundle\DomainBundle\Configuration;
+namespace FOX\ReferenceDataLoaderBundle\Configuration;
 
 /**
  * Class CommonConfiguration

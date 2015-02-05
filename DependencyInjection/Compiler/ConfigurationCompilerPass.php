@@ -1,6 +1,6 @@
 <?php
 
-namespace GlobalPlatform\Bundle\DomainBundle\DependencyInjection\Compiler;
+namespace FOX\ReferenceDataLoaderBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;

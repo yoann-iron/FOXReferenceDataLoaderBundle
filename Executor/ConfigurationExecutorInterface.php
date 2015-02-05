@@ -1,6 +1,6 @@
 <?php
 
-namespace GlobalPlatform\Bundle\DomainBundle\Executor;
+namespace FOX\ReferenceDataLoaderBundle\Executor;
 
 /**
  * Interface ConfigurationExecutorInterface

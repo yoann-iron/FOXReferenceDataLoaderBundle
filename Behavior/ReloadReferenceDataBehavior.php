@@ -1,10 +1,10 @@
 <?php
 
-namespace GlobalPlatform\Bundle\DomainBundle\Behavior;
+namespace FOX\ReferenceDataLoaderBundle\Behavior;
 
-use GlobalPlatform\Bundle\DomainBundle\Configuration\ConfigurationChainInterface;
-use GlobalPlatform\Bundle\DomainBundle\Executor\ConfigurationExecutorInterface;
-use GlobalPlatform\Bundle\DomainBundle\Configuration\ConfigurationInterface;
+use FOX\ReferenceDataLoaderBundle\Configuration\ConfigurationChainInterface;
+use FOX\ReferenceDataLoaderBundle\Executor\ConfigurationExecutorInterface;
+use FOX\ReferenceDataLoaderBundle\Configuration\ConfigurationInterface;
 
 /**
  * Class ReloadReferenceDataBehavior

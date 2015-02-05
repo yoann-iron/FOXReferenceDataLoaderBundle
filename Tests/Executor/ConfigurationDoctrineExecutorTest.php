@@ -1,10 +1,10 @@
 <?php
 
-namespace GlobalPlatform\Bundle\DomainBundle\Tests\Unit\Executor;
+namespace FOX\ReferenceDataLoaderBundle\Tests\Unit\Executor;
 
 use Doctrine\ORM\EntityManager;
 use Doctrine\DBAL\Connection;
-use GlobalPlatform\Bundle\DomainBundle\Executor\ConfigurationDoctrineExecutor;
+use FOX\ReferenceDataLoaderBundle\Executor\ConfigurationDoctrineExecutor;
 use Phake;
 
     /**

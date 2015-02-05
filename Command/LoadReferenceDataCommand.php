@@ -1,8 +1,8 @@
 <?php
 
-namespace GlobalPlatform\Bundle\DomainBundle\Command;
+namespace FOX\ReferenceDataLoaderBundle\Command;
 
-use GlobalPlatform\Bundle\DomainBundle\Configuration\CommonConfiguration;
+use FOX\ReferenceDataLoaderBundle\Configuration\CommonConfiguration;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

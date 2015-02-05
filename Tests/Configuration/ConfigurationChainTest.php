@@ -1,10 +1,10 @@
 <?php
 
-namespace GlobalPlatform\Bundle\DomainBundle\Tests\Unit\Configuration;
+namespace FOX\ReferenceDataLoaderBundle\Tests\Unit\Configuration;
 
-use GlobalPlatform\Bundle\DomainBundle\Configuration\CommonConfiguration;
-use GlobalPlatform\Bundle\DomainBundle\Configuration\ConfigurationChain;
-use GlobalPlatform\Bundle\DomainBundle\Configuration\ConfigurationInterface;
+use FOX\ReferenceDataLoaderBundle\Configuration\CommonConfiguration;
+use FOX\ReferenceDataLoaderBundle\Configuration\ConfigurationChain;
+use FOX\ReferenceDataLoaderBundle\Configuration\ConfigurationInterface;
 
 /**
  * Class ConfigurationChainTest
@@ -81,7 +81,7 @@ class ConfigurationChainTest extends \PHPUnit_Framework_TestCase
         $this->configurationChain->addConfiguration($configuration);
 
         if (null === $expectedReturn) {
-            $this->setExpectedException('GlobalPlatform\Bundle\DomainBundle\Exception\ConfigurationNotFoundException');
+            $this->setExpectedException('FOX\ReferenceDataLoaderBundle\Exception\ConfigurationNotFoundException');
         }
 
         $this->assertEquals($expectedReturn, $this->configurationChain->getConfiguration($identifier));

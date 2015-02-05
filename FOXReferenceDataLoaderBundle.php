@@ -1,15 +1,15 @@
 <?php
 
-namespace GlobalPlatform\Bundle\DomainBundle;
+namespace FOX\ReferenceDataLoaderBundle;
 
-use GlobalPlatform\Bundle\DomainBundle\DependencyInjection\Compiler\ConfigurationCompilerPass;
+use FOX\ReferenceDataLoaderBundle\DependencyInjection\Compiler\ConfigurationCompilerPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class GlobalPlatformDomainBundle
+ * Class FOXReferenceDataLoaderBundle
  */
-class GlobalPlatformDomainBundle extends Bundle
+class FOXReferenceDataLoaderBundle extends Bundle
 {
     /**
      * {@inheritDoc}
