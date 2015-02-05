@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <!-- chain -->
+        <parameter key="gp_domain.configuration.chain.class">GlobalPlatform\Bundle\DomainBundle\Configuration\ConfigurationChain</parameter>
+
+        <!-- configuration -->
+        <parameter key="gp_domain.configuration.common.class">GlobalPlatform\Bundle\DomainBundle\Configuration\CommonConfiguration</parameter>
+        <parameter key="gp_domain.configuration.stats.class">GlobalPlatform\Bundle\DomainBundle\Configuration\StatsDataTestConfiguration</parameter>
+        <parameter key="gp_domain.configuration.stats_rollback.class">GlobalPlatform\Bundle\DomainBundle\Configuration\StatsDataTestRollbackConfiguration</parameter>
+        <parameter key="gp_domain.configuration.stats_fixture.class">GlobalPlatform\Bundle\DomainBundle\Configuration\StatsDataFixtureConfiguration</parameter>
+        <parameter key="gp_domain.configuration.automatic_email.class">GlobalPlatform\Bundle\DomainBundle\Configuration\AutomaticEmailConfiguration</parameter>
+    </parameters>
+
+    <services>
+        <!-- chain -->
+        <service id="gp_domain.configuration.chain" class="%gp_domain.configuration.chain.class%" />
+
+        <!-- configuration -->
+        <service id="gp_domain.configuration.common" class="%gp_domain.configuration.common.class%">
+            <tag name="gp_domain.configuration" />
+        </service>
+        <service id="gp_domain.configuration.stats" class="%gp_domain.configuration.stats.class%">
+            <tag name="gp_domain.configuration" />
+        </service>
+        <service id="gp_domain.configuration.automatic_email" class="%gp_domain.configuration.automatic_email.class%">
+            <tag name="gp_domain.configuration" />
+        </service>
+        <service id="gp_domain.configuration.stats_rollback" class="%gp_domain.configuration.stats_rollback.class%">
+            <tag name="gp_domain.configuration" />
+        </service>
+        <service id="gp_domain.configuration.stats_fixture" class="%gp_domain.configuration.stats_fixture.class%">
+            <tag name="gp_domain.configuration" />
+        </service>
+    </services>
+</container>
